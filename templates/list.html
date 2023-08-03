@@ -12,13 +12,13 @@
     <hr>
     <table width=400 border=1 bgcolor='#ccffcc'>
         <tr>
-            <td>品名</td>
+            <td>品項名稱</td>
             <td>售價</td>
             <td>庫存量</td>
         </tr>
         {% for p in products %}
         <tr>
-            <td>{{p.name}}</td>
+            <td><a href='/list/{{p.sku}}'>{{p.name}}</a></td>
             <td>{{p.price}}</td>
             <td>{{p.qty}}</td>
         </tr>
@@ -28,13 +28,13 @@
     <hr>
     <table width=400 border=1 bgcolor='#ccffcc'>
         <tr>
-            <td>品名</td>
+            <td>品項名稱</td>
             <td>售價</td>
             <td>庫存量</td>
         </tr>
         {% for p in products2 %}
         <tr>
-            <td>{{p.name}}</td>
+            <td><a href='/list/{{p.sku}}'>{{p.name}}</a></td>
             <td>{{p.price}}</td>
             <td>{{p.qty}}</td>
         </tr>
